@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{616FC7CD-F586-4D65-A881-8C3F84E88305}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JHGSZD</RootNamespace>
+    <AssemblyName>JHGSZD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\JHGSZD.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\JHGSZD.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\Framework64\v2.0.50727\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUtil.cs" />
+    <Compile Include="clsPublicStatic.cs" />
+    <Compile Include="frmLiveFU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiveFU.Designer.cs">
+      <DependentUpon>frmLiveFU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQueryFU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueryFU.Designer.cs">
+      <DependentUpon>frmQueryFU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRainAlm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRainAlm.Designer.cs">
+      <DependentUpon>frmRainAlm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWindAlm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWindAlm.Designer.cs">
+      <DependentUpon>frmWindAlm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQueryEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueryEquip.Designer.cs">
+      <DependentUpon>frmQueryEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="oracleDAO.cs" />
+    <EmbeddedResource Include="frmLiveFU.resx">
+      <DependentUpon>frmLiveFU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQueryFU.resx">
+      <DependentUpon>frmQueryFU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRainAlm.resx">
+      <DependentUpon>frmRainAlm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWindAlm.resx">
+      <DependentUpon>frmWindAlm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQueryEquip.resx">
+      <DependentUpon>frmQueryEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KTK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15-20蓝色报警框闪烁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15-20蓝色报警状态.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20-25黄色报警框闪烁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20-25黄色报警状态.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25-30橙色报警框闪烁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25-30橙色报警状态.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30红色报警框闪烁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30红色报警状态.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白点.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白桥.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\车站.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\车站1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\车站2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单白线1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单电网断线.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单红线1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单红线11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单黄线.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单黄线1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单绿线 短1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单绿线长.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\地震报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\地震故障.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\地震正常.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\电网灰色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\电网闪烁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\电网正常.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\风0级报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\风1级报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\风1级报警1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\风2级报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\风3级报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\风4级报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黑点.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\红电网.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黄电网.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\监控单元失效.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绿点.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绿电网.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双白线.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双电网断线.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双红线.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双绿线 短.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双绿线 长.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图片6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物kuang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物按钮不可用.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物按钮操作完成.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物按钮可用.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物黑底.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物红灯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物红底.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物黄灯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物灰灯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\异物绿灯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\雨1级报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\雨2级报警.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\雨正常.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\正常状态.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
